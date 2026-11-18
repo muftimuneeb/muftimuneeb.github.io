@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muneeb Ur Rehman – Data Science & Python Developer</title>
+<meta name="description" content="Portfolio of Muneeb Ur Rehman: data science, Python and Django developer based in Haripur, Pakistan.">
+<meta name="theme-color" content="#2f5bff">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Muneeb Ur Rehman – Data Science &amp; Python Developer">
+<meta property="og:description" content="Portfolio of Muneeb Ur Rehman: data science, Python and Django developer based in Haripur, Pakistan.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="avatar.jpg">
+<meta property="og:image" content="avatar.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Muneeb Ur Rehman","jobTitle":"Data Science Specialist","email":"mufti.muneeb9699@gmail.com","image":"pic.jpg","sameAs":["https://github.com/muftimuneeb","https://www.linkedin.com/in/muneeburrehman995"],"address":{"@type":"PostalAddress","addressLocality":"Haripur","addressRegion":"Khyber Pakhtunkhwa","addressCountry":"PK"},"affiliation":{"@type":"CollegeOrUniversity","name":"The University of Haripur"},"knowsAbout":["Python","Django","SQL","Machine learning","Data engineering","OCR","Large language models"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#f4f6fb;--surface:#ffffff;--text:#101a33;--muted:#56607a;--accent:#2f5bff;--accent2:#e8890c;--border:#dde2ef;--glow:rgba(47,91,255,.14);
+  --head:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;--body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1122;--surface:#121b33;--text:#e9eefc;--muted:#9aa7c7;--accent:#7c9bff;--accent2:#ffb347;--border:#233055;--glow:rgba(124,155,255,.16);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a1122;--surface:#121b33;--text:#e9eefc;--muted:#9aa7c7;--accent:#7c9bff;--accent2:#ffb347;--border:#233055;--glow:rgba(124,155,255,.16);color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 4.5rem);height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased;min-height:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0;letter-spacing:-.02em}
+.wrap{width:min(1080px,100% - 2.5rem);margin-inline:auto}
+section{padding:5.5rem 0 1rem}
+h2{font-size:clamp(1.9rem,4.2vw,2.7rem);font-weight:800;margin-bottom:2rem}
+p{margin:0 0 1rem;max-width:68ch}
+
+/* nav */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+header .wrap{display:flex;align-items:center;gap:1rem;height:3.6rem}
+.logo{font:800 1.15rem var(--head);text-decoration:none;white-space:nowrap}
+.logo span{color:var(--accent)}
+nav{display:flex;gap:.2rem;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{padding:.4rem .8rem;border-radius:99px;text-decoration:none;font-size:.95rem;color:var(--muted);white-space:nowrap;transition:background .2s,color .2s}
+nav a:hover,nav a.on{color:var(--text);background:var(--glow)}
+#theme{flex:none;width:2.4rem;height:2.4rem;border-radius:50%;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;font-size:1.05rem;transition:transform .4s}
+#theme:hover{transform:rotate(25deg)}
+#bar{position:absolute;left:0;bottom:-1px;height:3px;width:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));transform:scaleX(0);transform-origin:left}
+
+/* hero */
+.hero{padding:3.5rem 0 2rem}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:center;min-height:min(78vh,640px)}
+.hi{font-size:1.05rem;color:var(--muted);margin-bottom:1rem}
+.hi b{color:var(--text);font-weight:600}
+h1{font-size:clamp(2.7rem,7.2vw,5.2rem);font-weight:800}
+.role{font:700 clamp(1.15rem,2.4vw,1.5rem) var(--head);color:var(--accent);margin:1.1rem 0 1rem;min-height:2em}
+.role .cur{display:inline-block;width:2px;height:1.1em;background:var(--accent2);margin-left:3px;vertical-align:-.15em;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:12px;font-weight:600;text-decoration:none;border:1.5px solid var(--text);transition:transform .2s,box-shadow .2s,background .2s}
+.btn.main{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px var(--glow)}
+.btn.main{color:#fff}
+:root[data-theme="dark"] .btn.main{color:#0a1122}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.main{color:#0a1122}}
+.load>*{opacity:0;transform:translateY(18px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+.load>*:nth-child(2){animation-delay:.12s}.load>*:nth-child(3){animation-delay:.24s}.load>*:nth-child(4){animation-delay:.36s}.load>*:nth-child(5){animation-delay:.48s}
+@keyframes up{to{opacity:1;transform:none}}
+
+/* about */
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:start}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fact{padding:1.1rem 1.2rem;border:1px solid var(--border);background:var(--surface);border-radius:16px}
+.fact b{display:block;font:800 2.2rem var(--head);color:var(--accent)}
+.fact span{font-size:.92rem;color:var(--muted);line-height:1.35;display:block}
+
+/* timeline */
+.tl{position:relative;padding-left:2rem;--p:0}
+.tl::before,.tl::after{content:"";position:absolute;left:5px;top:6px;width:2px;bottom:6px;background:var(--border)}
+.tl::after{background:linear-gradient(var(--accent),var(--accent2));transform-origin:top;transform:scaleY(var(--p))}
+.job{position:relative;margin-bottom:2.2rem}
+.job::before{content:"";position:absolute;left:-2rem;top:.5rem;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--accent);transition:transform .4s,background .4s}
+.job.in::before{background:var(--accent);transform:scale(1.15)}
+.job h3{font-size:1.35rem}
+.meta{color:var(--muted);font-size:.95rem;margin:.2rem 0 .8rem}
+ul.dots{margin:0;padding-left:1.1rem;max-width:72ch}
+ul.dots li{margin-bottom:.4rem}
+ul.dots li::marker{color:var(--accent)}
+
+/* projects */
+.proj{border-top:1px solid var(--border)}
+.proj:last-child{border-bottom:1px solid var(--border)}
+.proj summary{display:grid;grid-template-columns:1fr auto;gap:.3rem 1.5rem;align-items:center;padding:1.4rem .2rem;cursor:pointer;list-style:none;transition:padding .3s,background .3s}
+.proj summary::-webkit-details-marker{display:none}
+.proj summary:hover{background:var(--glow);padding-left:1rem}
+.proj h3{font-size:clamp(1.2rem,2.6vw,1.7rem)}
+.proj .tag{font-size:.92rem;color:var(--accent2);font-weight:600}
+.proj .stack{grid-column:1;color:var(--muted);font-size:.95rem}
+.plus{grid-column:2;grid-row:1/3;width:2.4rem;height:2.4rem;border-radius:50%;border:1.5px solid var(--text);display:grid;place-items:center;font-size:1.4rem;line-height:1;transition:transform .35s,background .35s}
+.proj[open] .plus{transform:rotate(45deg);background:var(--accent);border-color:var(--accent);color:#fff}
+.proj .body{padding:0 .2rem 1.6rem;animation:up .45s ease both}
+.feat{display:inline-block;font-size:.8rem;font-weight:600;color:var(--accent);border:1px solid var(--accent);border-radius:99px;padding:.05rem .6rem;margin-right:.6rem;vertical-align:.15em}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.2rem}
+.sk{padding:1.4rem;border:1px solid var(--border);border-radius:18px;background:var(--surface);transition:transform .25s,border-color .25s}
+.sk:hover{transform:translateY(-4px);border-color:var(--accent)}
+.sk h3{font-size:1.1rem;margin-bottom:.8rem}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chips span{font-size:.88rem;padding:.2rem .7rem;border-radius:99px;background:var(--glow);transition:background .2s,color .2s}
+.chips span:hover{background:var(--accent);color:#fff}
+.course{margin-top:2rem;color:var(--muted);font-size:.97rem}
+.course b{color:var(--text);font-weight:600}
+
+/* education */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.two h3{font-size:1.25rem;margin-bottom:1rem}
+.card{padding:1.2rem 1.3rem;border-left:3px solid var(--accent2);background:var(--surface);border-radius:0 14px 14px 0;margin-bottom:1rem}
+.card h4{margin:0 0 .2rem;font:700 1.05rem var(--head)}
+.card p{margin:0;color:var(--muted);font-size:.96rem}
+
+/* contact */
+.contact{padding:2.5rem;border:1px solid var(--border);border-radius:28px;background:var(--surface);display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:center;position:relative;overflow:hidden}
+.contact::after{content:"";position:absolute;width:340px;height:340px;right:-90px;top:-130px;border-radius:50%;background:radial-gradient(var(--glow),transparent 70%);animation:float 9s ease-in-out infinite;pointer-events:none}
+@keyframes float{50%{transform:translate(-30px,30px)}}
+.contact h2{margin-bottom:.8rem}
+.links{display:grid;gap:.6rem;position:relative;z-index:1}
+.links a{display:flex;justify-content:space-between;gap:1rem;padding:.85rem 1.1rem;border:1px solid var(--border);border-radius:12px;text-decoration:none;background:var(--bg);transition:transform .2s,border-color .2s}
+.links a:hover{transform:translateX(6px);border-color:var(--accent)}
+.links span{color:var(--muted);font-size:.92rem;overflow-wrap:anywhere;text-align:right}
+footer{padding:2.5rem 0 3rem;color:var(--muted);font-size:.92rem;text-align:center}
+
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+/* intro curtain, ambient background, cursor glow */
+.intro{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:var(--bg);animation:curtain .9s cubic-bezier(.77,0,.18,1) 1.8s forwards}
+.intro>div{text-align:center;width:min(380px,80vw)}
+.intro b{display:block;font:800 clamp(2rem,6vw,3.4rem)/1 var(--head);letter-spacing:-.02em;animation:in .8s cubic-bezier(.2,.7,.2,1) .1s both}
+.intro small{display:block;color:var(--muted);margin-top:.8rem;font-size:.95rem;animation:in .8s ease .35s both}
+.intro i{display:block;height:3px;width:0;margin-top:1.4rem;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));animation:fill 1.3s ease .4s forwards}
+@keyframes in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes fill{to{width:100%}}
+@keyframes curtain{to{transform:translateY(-100%);visibility:hidden}}
+.blobs{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.blobs i{position:absolute;border-radius:50%;filter:blur(80px);opacity:.28;animation:drift 20s ease-in-out infinite}
+.blobs i:nth-child(1){width:520px;height:520px;background:var(--accent);left:-160px;top:-100px}
+.blobs i:nth-child(2){width:460px;height:460px;background:var(--accent2);right:-140px;top:38%;animation-delay:-7s;opacity:.18}
+.blobs i:nth-child(3){width:420px;height:420px;background:var(--accent);left:30%;bottom:-200px;animation-delay:-13s}
+@keyframes drift{50%{transform:translate(70px,55px) scale(1.14)}}
+#glow{position:fixed;left:0;top:0;width:460px;height:460px;margin:-230px 0 0 -230px;border-radius:50%;background:radial-gradient(var(--glow),transparent 65%);pointer-events:none;z-index:0;will-change:transform}
+@media (hover:none){#glow{display:none}}
+.load>*:nth-child(1){animation-delay:1.9s}.load>*:nth-child(2){animation-delay:2.0s}.load>*:nth-child(3){animation-delay:2.15s}.load>*:nth-child(4){animation-delay:2.3s}.load>*:nth-child(5){animation-delay:2.45s}
+h1>span{display:inline-block;white-space:nowrap;margin-right:.26em}
+h1 span span{display:inline-block;opacity:0;transform:translateY(.6em) rotate(8deg);animation:in .7s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(2s + var(--i)*45ms)}
+.marq{overflow:hidden;border-block:1px solid var(--border);padding:1.1rem 0;margin-top:2.5rem;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marq div{display:flex;width:max-content;animation:mq 32s linear infinite;font:700 1.25rem var(--head);color:var(--muted)}
+.marq:hover div{animation-play-state:paused}
+.marq span{white-space:nowrap}.marq span::after{content:"✦";margin:0 2rem;color:var(--accent2)}
+@keyframes mq{to{transform:translateX(-50%)}}
+h2::after{content:"";display:block;height:4px;width:0;margin-top:.7rem;border-radius:4px;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width .9s cubic-bezier(.2,.7,.2,1) .25s}
+h2.in::after{width:72px}
+.card,.fact{transition:transform .2s ease-out,border-color .2s}
+.fact:hover{border-color:var(--accent)}
+.skills .chips span{opacity:0}
+.skills.in .chips span{animation:pop .55s cubic-bezier(.3,1.4,.5,1) forwards}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.intro{display:none}.blobs i,#glow{display:none}h1 span span,.skills .chips span{opacity:1;transform:none}h2::after{width:72px}}
+.me{margin:0;justify-self:end;width:310px;aspect-ratio:.68;animation:in .9s cubic-bezier(.2,.7,.2,1) 2.1s both}
+.me img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 0;filter:drop-shadow(0 16px 30px var(--glow));-webkit-mask-image:linear-gradient(#000 80%,transparent),linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(#000 80%,transparent),linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-composite:intersect}
+@media (max-width:820px){.me{justify-self:center;width:min(72%,300px)}}
+.logo{display:flex;align-items:center;gap:.55rem}.logo img{width:2rem;height:2rem;border-radius:50%;object-fit:cover;border:2px solid var(--accent)}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1.5rem;margin:1.6rem 0 0;padding:1.2rem 1.3rem;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+.info dt{font-size:.82rem;color:var(--muted)}.info dd{margin:0;font-weight:600}
+.ic{display:grid;place-items:center;width:2.8rem;height:2.8rem;border-radius:12px;margin-bottom:1rem;background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--bg);font:800 1rem var(--head)}
+.sk p{margin:0;color:var(--muted);font-size:.97rem}
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.filters button{font:inherit;font-size:.92rem;font-weight:600;padding:.45rem 1.1rem;border-radius:99px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.filters button:hover{transform:translateY(-2px)}.filters .on{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.proj.hide{display:none}.proj:not(.hide){animation:in .45s ease both}
+.cf{display:grid;gap:.7rem;position:relative;z-index:1;margin-top:1.2rem}
+.cf input,.cf textarea{font:inherit;color:var(--text);background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:.8rem 1rem;resize:vertical;transition:border-color .2s,box-shadow .2s}
+.cf input:focus,.cf textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px var(--glow)}
+.cf .btn{cursor:pointer;font:inherit;font-weight:600;justify-self:start}
+footer .fl{display:flex;flex-wrap:wrap;justify-content:center;gap:.3rem 1.4rem;margin-bottom:1rem}footer .fl a{text-decoration:none}footer .fl a:hover{color:var(--accent)}
+#top-btn{position:fixed;right:1.2rem;bottom:calc(1.2rem + env(safe-area-inset-bottom,0px));z-index:35;width:2.8rem;height:2.8rem;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:var(--bg);text-decoration:none;font-size:1.2rem;opacity:0;transform:translateY(14px);pointer-events:none;transition:opacity .3s,transform .3s}
+#top-btn.show{opacity:1;transform:none;pointer-events:auto}
+@media (max-width:820px){
+  .hero .wrap,.about,.two,.contact{grid-template-columns:1fr}
+  section{padding-top:4rem}
+  .contact{padding:1.6rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv,.load>*{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="intro" aria-hidden="true"><div><b>Muneeb Ur Rehman</b><small>Data science, Python and software engineering</small><i></i></div></div>
+<div class="blobs" aria-hidden="true"><i></i><i></i><i></i></div>
+<div id="glow" aria-hidden="true"></div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Back to top"><img src="avatar.jpg" alt="" width="32" height="32">Muneeb<span>.</span></a>
+    <nav aria-label="Sections">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+    <button id="theme" type="button" aria-label="Toggle light and dark theme" title="Toggle theme">◐</button>
+  </div>
+  <div id="bar"></div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="load">
+        <p class="hi">Hi, I’m <b>Muneeb</b>, based in Haripur, Pakistan.</p>
+        <h1>Muneeb Ur Rehman</h1>
+        <div class="role" aria-live="polite"><span id="typed">Data Science Specialist</span><span class="cur"></span></div>
+        <p>I build reliable, database-driven software in Python and Django, and I use data science and machine learning to make that software smarter.</p>
+        <div class="btns">
+          <a class="btn main" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn" href="Muneeb_Ur_Rehman_Resume.docx" download>Download CV</a>
+        </div>
+      </div>
+      <figure class="me"><img src="pic-cutout.webp" alt="Portrait of Muneeb Ur Rehman" width="760" height="1013" fetchpriority="high"></figure>
+    </div>
+  </div>
+
+  <div class="marq" aria-hidden="true"><div id="mq"><span>Python</span><span>Django</span><span>SQL</span><span>PostgreSQL</span><span>Machine learning</span><span>pandas</span><span>scikit-learn</span><span>REST APIs</span><span>OCR</span><span>Local LLMs</span><span>Selenium</span><span>Data pipelines</span></div></div>
+
+  <section id="about"><div class="wrap">
+    <h2 class="rv">About me</h2>
+    <div class="about">
+      <div class="rv">
+        <p>I’m a Software Engineering student at the University of Haripur, working full time on real applications while I finish my degree. I have over two years of professional experience building database-driven applications in Python, Django and SQL.</p>
+        <p>My day-to-day work covers data extraction, data-processing workflows, OCR and local LLM integration. It rests on a solid mathematical base in linear algebra, probability and statistics.</p>
+        <p>I enjoy turning messy requirements and messy data into software people can trust.</p>
+        <dl class="info"><div><dt>Location</dt><dd>Haripur, Pakistan</dd></div><div><dt>Degree</dt><dd>BS Software Engineering, 2027</dd></div><div><dt>Languages</dt><dd>English, Urdu</dd></div><div><dt>Focus</dt><dd>Data, backend and applied AI</dd></div></dl>
+      </div>
+      <div class="facts rv">
+        <div class="fact"><b data-n="2" data-s="+">0</b><span>years of professional experience</span></div>
+        <div class="fact"><b data-n="3.5" data-d="2">0</b><span>CGPA out of 4.00</span></div>
+        <div class="fact"><b data-n="5">0</b><span>selected projects</span></div>
+        <div class="fact"><b data-n="1">0</b><span>paper under review</span></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="services"><div class="wrap">
+    <h2 class="rv">What I do</h2>
+    <div class="skills rv">
+      <div class="sk"><span class="ic">&lt;/&gt;</span><h3>Backend and web applications</h3><p>Django and Django REST Framework applications with authentication, role management, real-time features and clean APIs.</p></div>
+      <div class="sk"><span class="ic">&#9636;</span><h3>Data processing and databases</h3><p>Database design, query optimisation and workflows that turn structured data into reliable, report-ready output.</p></div>
+      <div class="sk"><span class="ic">&#8623;</span><h3>Data extraction and automation</h3><p>Selenium and BeautifulSoup tools that collect and structure data from dynamic websites.</p></div>
+      <div class="sk"><span class="ic">&#9678;</span><h3>Applied AI and ML</h3><p>OCR pipelines, local LLM integration and machine-learning features added where they fit the problem.</p></div>
+    </div>
+  </div></section>
+
+  <section id="experience"><div class="wrap">
+    <h2 class="rv">Experience</h2>
+    <div class="tl" id="tl">
+      <div class="job rv">
+        <h3>Data Science Specialist</h3>
+        <div class="meta">Coomax Solutions, BIC, The University of Haripur · September 2025 – Present</div>
+        <ul class="dots">
+          <li>Build data-oriented features in Python, Django and SQL that organise and manage application data at scale.</li>
+          <li>Develop database queries and data-processing workflows that prepare structured data for analysis, reporting and application use.</li>
+          <li>Explore machine-learning and AI techniques for software features where they fit project requirements.</li>
+          <li>Test and validate application outputs, investigate data issues, and improve data consistency and system reliability.</li>
+        </ul>
+      </div>
+      <div class="job rv">
+        <h3>Python Developer</h3>
+        <div class="meta">Directorate of IT Services, The University of Haripur · July 2024 – Present</div>
+        <ul class="dots">
+          <li>Develop and maintain university web applications using Python, Django, SQL, HTML and CSS.</li>
+          <li>Helped deliver the Online Transcript and Degree Management Module, recognised with a Certificate of Appreciation from the Vice Chancellor.</li>
+          <li>Optimise database queries and indexing to support application performance.</li>
+          <li>Write automated tests and troubleshoot issues in live production environments.</li>
+        </ul>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <h2 class="rv">Projects</h2>
+    <div class="filters rv" role="group" aria-label="Filter projects"><button type="button" class="on" data-f="all">All</button><button type="button" data-f="web">Web</button><button type="button" data-f="data">Data</button><button type="button" data-f="ai">AI</button></div>
+    <div class="rv">
+      <details class="proj" data-c="web data" open>
+        <summary><h3><span class="feat">Featured</span>CollabSpace</h3><span class="tag">Final-year project</span><span class="stack">Python, Django, Django REST Framework, WebSockets, PostgreSQL</span><span class="plus" aria-hidden="true">+</span></summary>
+        <div class="body"><ul class="dots">
+          <li>A collaboration platform for student groups, project management, file sharing and real-time communication.</li>
+          <li>REST APIs, JWT authentication, role management, and real-time messaging and notifications.</li>
+          <li>A recommendation approach that matches partners using skills, courses and availability.</li>
+        </ul></div>
+      </details>
+      <details class="proj" data-c="ai">
+        <summary><h3>AI Screenshot Text Extractor</h3><span class="tag">Personal project</span><span class="stack">Python, Tesseract OCR, Ollama (local LLM)</span><span class="plus" aria-hidden="true">+</span></summary>
+        <div class="body"><ul class="dots">
+          <li>An OCR pipeline with image preprocessing that extracts text from screenshots.</li>
+          <li>Local language-model inference that generates contextual responses from the extracted text.</li>
+        </ul></div>
+      </details>
+      <details class="proj" data-c="data">
+        <summary><h3>IBISWorld Data Scraper</h3><span class="tag">Data extraction</span><span class="stack">Python, Selenium, BeautifulSoup</span><span class="plus" aria-hidden="true">+</span></summary>
+        <div class="body"><ul class="dots"><li>An extraction workflow for dynamic pages and HTML parsing that produces structured, report-ready data.</li></ul></div>
+      </details>
+      <details class="proj" data-c="data">
+        <summary><h3>Startup Data Extractor</h3><span class="tag">Automation</span><span class="stack">Python, Selenium</span><span class="plus" aria-hidden="true">+</span></summary>
+        <div class="body"><ul class="dots"><li>An automation tool that collects company details, emails and website information for lead generation.</li></ul></div>
+      </details>
+      <details class="proj" data-c="web">
+        <summary><h3>Student Grading and Finance Management Systems</h3><span class="tag">Web applications</span><span class="stack">PHP, Laravel, MySQL, Bootstrap</span><span class="plus" aria-hidden="true">+</span></summary>
+        <div class="body"><ul class="dots"><li>Contributed to systems with dashboards, role-based access control and reporting.</li></ul></div>
+      </details>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <h2 class="rv">Skills</h2>
+    <div class="skills rv">
+      <div class="sk"><h3>Programming</h3><div class="chips"><span>Python</span><span>SQL</span><span>PHP</span></div></div>
+      <div class="sk"><h3>Data science and ML</h3><div class="chips"><span>Data cleaning</span><span>Statistical analysis</span><span>ML fundamentals</span><span>pandas</span><span>NumPy</span><span>scikit-learn</span></div></div>
+      <div class="sk"><h3>Data and databases</h3><div class="chips"><span>PostgreSQL</span><span>MySQL</span><span>SQLite</span><span>Database design</span><span>Query optimisation</span><span>Data pipelines</span></div></div>
+      <div class="sk"><h3>AI and automation</h3><div class="chips"><span>Tesseract OCR</span><span>Ollama / local LLMs</span><span>Selenium</span><span>BeautifulSoup</span></div></div>
+      <div class="sk"><h3>Backend and web</h3><div class="chips"><span>Django</span><span>Django REST Framework</span><span>Laravel</span><span>REST APIs</span><span>JWT</span><span>WebSockets</span><span>HTML</span><span>CSS</span><span>Bootstrap</span></div></div>
+      <div class="sk"><h3>Tools</h3><div class="chips"><span>Git</span><span>GitHub</span><span>Automated testing</span></div></div>
+    </div>
+    <p class="course rv"><b>Coursework:</b> Calculus, Linear Algebra, Probability and Statistics, Discrete Structures, Data Structures and Algorithms, Database Systems, Simulation and Modelling, Operating Systems, Software Design and Architecture, Information Security, Agile Methods, Software Re-Engineering.</p>
+  </div></section>
+
+  <section id="exploring"><div class="wrap">
+    <h2 class="rv">Currently exploring</h2>
+    <div class="skills rv">
+      <div class="sk"><h3>Machine learning and statistical modelling</h3><p>Moving from using AI techniques inside software to understanding and building them rigorously.</p></div>
+      <div class="sk"><h3>NLP and LLM applications</h3><p>Extending my work with OCR and local language models.</p></div>
+      <div class="sk"><h3>Data engineering and recommenders</h3><p>Building on my database, pipeline and matching-algorithm experience.</p></div>
+    </div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <h2 class="rv">Education and recognition</h2>
+    <div class="two">
+      <div class="rv">
+        <h3>Education</h3>
+        <div class="card"><h4>BS Software Engineering</h4><p>The University of Haripur · Feb 2023 – Feb 2027 (expected)<br>CGPA 3.50/4.00 after seven semesters and 115 credit hours.</p></div>
+        <div class="card"><h4>Diploma in Information Technology</h4><p>Khyber Pakhtunkhwa Trade Testing Board · 2022 – 2023</p></div>
+        <h3 style="margin-top:2rem">Publication</h3>
+        <div class="card"><h4>Security Risks in AI-Assisted Programming</h4><p>A comparative systematic literature review of vulnerabilities in LLM-generated code. International Journal of Computation Malaysia (IJCM), under review.</p></div>
+      </div>
+      <div class="rv">
+        <h3>Awards and certifications</h3>
+        <div class="card"><h4>Certificate of Appreciation</h4><p>The University of Haripur, signed by the Vice Chancellor and the Director of IT Services, for the Online Transcript and Degree Management Module.</p></div>
+        <div class="card"><h4>High Achiever</h4><p>FSc (Intermediate) Board Examination Academic Award.</p></div>
+        <div class="card"><h4>Certifications</h4><p>Machine Learning (DataCamp) · Python for Data Science (Coursera) · Project Management (Coursera)</p></div>
+        <div class="card"><h4>Community and languages</h4><p>Volunteer, KTS Welfare Foundation (2022 – present). English (professional), Urdu (native).</p></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="contact rv">
+      <div>
+        <h2>Let’s build something useful.</h2>
+        <p>I’m happy to talk about data, Python or software projects. Email is the fastest way to reach me.</p>
+        <div class="cf"><input id="cn" placeholder="Your name" aria-label="Your name" autocomplete="name"><input id="ce" type="email" placeholder="Your email" aria-label="Your email" autocomplete="email"><textarea id="cm" rows="4" placeholder="How can I help?" aria-label="Message"></textarea><button class="btn main" type="button" id="send">Send message</button></div>
+      </div>
+      <div class="links">
+        <a href="mailto:mufti.muneeb9699@gmail.com">Email <span>mufti.muneeb9699@gmail.com</span></a>
+        <a href="Muneeb_Ur_Rehman_Resume.docx" download>Resume <span>Download (.docx)</span></a>
+        <a href="tel:+923115091309">Phone <span>+92 311 5091309</span></a>
+        <a href="https://github.com/muftimuneeb" target="_blank" rel="noopener">GitHub <span>github.com/muftimuneeb</span></a>
+        <a href="https://www.linkedin.com/in/muneeburrehman995" target="_blank" rel="noopener">LinkedIn <span>linkedin.com/in/muneeburrehman995</span></a>
+      </div>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap"><div class="fl"><a href="#about">About</a><a href="#services">Services</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a><a href="https://github.com/muftimuneeb" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/muneeburrehman995" target="_blank" rel="noopener">LinkedIn</a></div>© <span id="yr">2026</span> Muneeb Ur Rehman · Haripur, Khyber Pakhtunkhwa, Pakistan</div></footer>
+<a id="top-btn" href="#top" aria-label="Back to top">&uarr;</a>
+
+<script>
+(function(){
+  var root=document.documentElement,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* theme */
+  try{var s=localStorage.getItem('theme');if(s)root.dataset.theme=s}catch(e){}
+  function dark(){return root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches}
+  document.getElementById('theme').addEventListener('click',function(){
+    var t=dark()?'light':'dark';root.dataset.theme=t;try{localStorage.setItem('theme',t)}catch(e){}
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  /* role typer */
+  var roles=['Data Science Specialist','Python Developer','Software Engineering Student'],el=document.getElementById('typed');
+  if(!reduce){var ri=0,ci=roles[0].length,del=true;
+    (function tick(){var w=roles[ri],d=120;
+      if(del){ci--;d=45;if(ci<=0){del=false;ri=(ri+1)%roles.length;d=300}}
+      else{ci++;if(ci>=roles[ri].length){del=true;d=2000}}
+      el.textContent=roles[ri].slice(0,ci);setTimeout(tick,d)})();
+    setTimeout(function(){},0);
+  }
+
+  /* reveal, counters, timeline dots */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target);
+    e.target.querySelectorAll('[data-n]').forEach(count);
+  })},{threshold:.18});
+  document.querySelectorAll('.rv').forEach(function(n){io.observe(n)});
+  function count(n){var to=+n.dataset.n,dc=+(n.dataset.d||0),sfx=n.dataset.s||'',t0=performance.now();
+    if(reduce){n.textContent=to.toFixed(dc)+sfx;return}
+    (function f(t){var p=Math.min(1,(t-t0)/1400),e=1-Math.pow(1-p,3);n.textContent=(to*e).toFixed(dc)+sfx;if(p<1)requestAnimationFrame(f)})(t0)}
+
+  /* scroll progress, timeline line, active nav */
+  var bar=document.getElementById('bar'),tl=document.getElementById('tl'),links=[].slice.call(document.querySelectorAll('nav a')),secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  function onScroll(){
+    var h=document.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(h>0?scrollY/h:0)+')';
+    var r=tl.getBoundingClientRect(),p=Math.max(0,Math.min(1,(innerHeight*.6-r.top)/r.height));tl.style.setProperty('--p',p);
+    var cur=-1;secs.forEach(function(s,i){if(s.getBoundingClientRect().top<innerHeight*.4)cur=i});
+    links.forEach(function(a,i){a.classList.toggle('on',i===cur)});
+  }
+  addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);onScroll();
+
+  /* project filters, contact composer, back-to-top */
+  document.querySelectorAll('.filters button').forEach(function(b){b.addEventListener('click',function(){
+    document.querySelectorAll('.filters button').forEach(function(x){x.classList.toggle('on',x===b)});
+    var f=b.dataset.f;document.querySelectorAll('.proj').forEach(function(p){p.classList.toggle('hide',f!=='all'&&(p.dataset.c||'').split(' ').indexOf(f)<0)})})});
+  document.getElementById('send').addEventListener('click',function(){
+    var n=document.getElementById('cn').value.trim(),e=document.getElementById('ce').value.trim(),m=document.getElementById('cm').value.trim();
+    location.href='mailto:mufti.muneeb9699@gmail.com?subject='+encodeURIComponent('Portfolio enquiry'+(n?' from '+n:''))+'&body='+encodeURIComponent(m+(e?'\n\nReply to: '+e:''))});
+  var tb=document.getElementById('top-btn');addEventListener('scroll',function(){tb.classList.toggle('show',scrollY>700)},{passive:true});
+
+  /* intro cleanup, headline split, marquee */
+  setTimeout(function(){var n=document.querySelector('.intro');if(n)n.remove()},3300);
+  var h1=document.querySelector('h1'),txt=h1.textContent,k=0;h1.setAttribute('aria-label',txt);h1.textContent='';
+  txt.split(' ').forEach(function(wd){var s=document.createElement('span');s.setAttribute('aria-hidden','true');
+    wd.split('').forEach(function(c){var l=document.createElement('span');l.textContent=c;l.style.setProperty('--i',k++);s.appendChild(l)});h1.appendChild(s)});
+  var mq=document.getElementById('mq');mq.innerHTML+=mq.innerHTML;
+  document.querySelectorAll('.chips').forEach(function(c){[].forEach.call(c.children,function(s,i){s.style.animationDelay=(i*60)+'ms'})});
+
+  /* cursor glow, card tilt, magnetic buttons (pointer devices only) */
+  if(!reduce&&matchMedia('(hover:hover)').matches){
+    var gl=document.getElementById('glow'),gx=innerWidth/2,gy=innerHeight/2,tx=gx,ty=gy;
+    addEventListener('pointermove',function(e){tx=e.clientX;ty=e.clientY});
+    (function g(){gx+=(tx-gx)*.12;gy+=(ty-gy)*.12;gl.style.transform='translate('+gx+'px,'+gy+'px)';requestAnimationFrame(g)})();
+    document.querySelectorAll('.sk,.fact,.card').forEach(function(c){
+      c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(700px) rotateX('+(-y*8)+'deg) rotateY('+(x*10)+'deg) translateY(-4px)'});
+      c.addEventListener('pointerleave',function(){c.style.transform=''})});
+    document.querySelectorAll('.btn').forEach(function(b){
+      b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.25)+'px,'+((e.clientY-r.top-r.height/2)*.35)+'px)'});
+      b.addEventListener('pointerleave',function(){b.style.transform=''})});
+  }
+
+})();
+</script>
+</body>
+</html>
